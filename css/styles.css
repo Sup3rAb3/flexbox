@@ -45,8 +45,14 @@
   }
 
   .social, .logo, .subscribe {
-    border:px solid #5995da;
+    border:1px solid #5995da;
     border-style: dotted;
+  }
+
+  .social, .subscribe {
+    align-self: flex-end;
+    margin-bottom: 15px;
+
   }
 
   .photo-grid-container {
@@ -58,9 +64,17 @@
     width: 900px;
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items: center;
   
+  }
+
+  .first-item {
+    order: 1;
+  }
+
+  .last-item {
+    order: -1;
   }
 
   .photo-grid-item {
